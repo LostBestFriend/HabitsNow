@@ -24,8 +24,8 @@ class _CustomTopBarState extends State<CustomTopBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      iconTheme: const IconThemeData(color: iconActivePage),
-      backgroundColor: backgroundPage,
+      iconTheme: const IconThemeData(color: iconActiveColor),
+      backgroundColor: backgroundColor,
       title: Text(widget.title),
       actions: [
         Row(
@@ -41,7 +41,7 @@ class _CustomTopBarState extends State<CustomTopBar> {
               },
               icon: const Icon(
                 Icons.more_vert,
-                color: iconDisablePage,
+                color: iconDisableColor,
               ),
             ),
           ],

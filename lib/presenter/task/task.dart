@@ -37,7 +37,7 @@ class _TaskPageState extends State<TaskPage> with TickerProviderStateMixin {
             children: [
               TabBar(
                 controller: _colorController,
-                indicatorColor: iconActivePage,
+                indicatorColor: iconActiveColor,
                 labelColor: Colors.white,
                 tabs: const [
                   Tab(

@@ -40,7 +40,7 @@ class HabitsWidget extends StatelessWidget {
 
   Widget buildTask(BuildContext context) {
     return Container(
-      color: title,
+      color: titleColor,
       padding: const EdgeInsets.all(5),
       child: Row(
         children: [
