@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../core/colors.dart';
-import '../widgets/custom_img_cont.dart';
-import '../widgets/custom_top_bar.dart';
+import '../../shared/widgets/custom_img_cont.dart';
+import '../../shared/widgets/custom_top_bar.dart';
 import '../sidebar/navigation_drawer.dart';
 import 'widgets/habits_list_widget.dart';
 

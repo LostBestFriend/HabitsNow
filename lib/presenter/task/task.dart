@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../core/colors.dart';
+import '../../shared/widgets/custom_img_cont.dart';
+import '../../shared/widgets/custom_top_bar.dart';
 import '../sidebar/navigation_drawer.dart';
-import '../widgets/custom_img_cont.dart';
-import '../widgets/custom_top_bar.dart';
 import 'widgets/task_list_widget.dart';
 
 class TaskPage extends StatefulWidget {

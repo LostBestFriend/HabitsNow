@@ -6,7 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import '../../core/colors.dart';
-import '../widgets/custom_top_bar.dart';
+import '../../shared/widgets/custom_top_bar.dart';
 import '../sidebar/navigation_drawer.dart';
 import 'events.dart';
 

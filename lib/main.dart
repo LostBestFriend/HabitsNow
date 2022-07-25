@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 
 import 'core/colors.dart';
 import 'presenter/sidebar/widgets/navigation_provider.dart';
-import 'presenter/widgets/splash_screen.dart';
+import 'shared/widgets/splash_screen.dart';
 
 void main() {
   runApp(
