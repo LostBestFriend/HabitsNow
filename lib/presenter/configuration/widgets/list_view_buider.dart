@@ -50,7 +50,7 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundPage,
+      backgroundColor: backgroundPage,
       body: ListView.builder(
         itemCount: iconList.length,
         itemBuilder: (BuildContext context, int index) {

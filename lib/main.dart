@@ -24,7 +24,7 @@ void main() {
         ),
       ],
       child: MaterialApp(
-        color: AppColors.backgroundPage,
+        color: title,
         theme: ThemeData.dark(),
         debugShowCheckedModeBanner: false,
         title: "Main Page",

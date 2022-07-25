@@ -37,7 +37,7 @@ class _HabitsPageState extends State<HabitsPage> with TickerProviderStateMixin {
             children: [
               TabBar(
                 controller: _colorController,
-                indicatorColor: AppColors.iconActivePage,
+                indicatorColor: iconActivePage,
                 labelColor: Colors.white,
                 tabs: const [
                   Tab(

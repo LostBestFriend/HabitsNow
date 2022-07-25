@@ -105,7 +105,7 @@ class _CategoryPageState extends State<CategoryPage> {
               margin: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadiusDirectional.circular(15),
-                color: AppColors.iconActivePage,
+                color: iconActivePage,
               ),
               height: 40,
               child: const Center(

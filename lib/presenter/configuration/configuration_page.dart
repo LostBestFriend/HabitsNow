@@ -11,7 +11,7 @@ class ConfigurationPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.backgroundPage,
+        backgroundColor: backgroundPage,
         title: const Text('Configurações'),
         leading: IconButton(
           icon: const Icon(
@@ -29,7 +29,7 @@ class ConfigurationPage extends StatelessWidget {
         ),
       ),
       body: const ListViewBuilder(),
-      backgroundColor: AppColors.backgroundPage,
+      backgroundColor: backgroundPage,
     );
   }
 }

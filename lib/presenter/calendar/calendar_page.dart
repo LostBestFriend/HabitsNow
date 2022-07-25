@@ -23,7 +23,7 @@ class CalendarPage extends StatefulWidget {
 class CalendarPageState extends State<CalendarPage> {
   static String diaFocado = "";
   static CalendarFormat formato = CalendarFormat.week;
-  Color corIconeAgenda = AppColors.iconDisablePage;
+  Color corIconeAgenda = iconDisablePage;
   int contButtonAgenda = 0;
   static DateTime? diaSelecionado = DateTime.now();
 
@@ -89,10 +89,10 @@ class CalendarPageState extends State<CalendarPage> {
               () {
                 contButtonAgenda++;
                 if (contButtonAgenda % 2 != 0) {
-                  corIconeAgenda = AppColors.iconActivePage;
+                  corIconeAgenda = iconActivePage;
                   formato = CalendarFormat.month;
                 } else {
-                  corIconeAgenda = AppColors.iconDisablePage;
+                  corIconeAgenda = iconDisablePage;
                   formato = CalendarFormat.week;
                 }
               },
@@ -110,27 +110,27 @@ class CalendarPageState extends State<CalendarPage> {
           TableCalendar<Event>(
             calendarStyle: const CalendarStyle(
               holidayTextStyle: TextStyle(
-                color: AppColors.iconDisablePage,
+                color: iconDisablePage,
               ),
               weekendTextStyle: TextStyle(
-                color: AppColors.iconActivePage,
+                color: iconActivePage,
               ),
               defaultTextStyle: TextStyle(
-                color: AppColors.iconDisablePage,
+                color: iconDisablePage,
               ),
               todayTextStyle: TextStyle(
-                color: AppColors.iconDisablePage,
+                color: iconDisablePage,
               ),
               selectedTextStyle: TextStyle(
-                color: AppColors.topBar,
+                color: topBar,
               ),
               outsideTextStyle: TextStyle(
                 color: Color.fromARGB(255, 36, 36, 36),
               ),
               selectedDecoration:
-                  BoxDecoration(color: AppColors.title, shape: BoxShape.circle),
+                  BoxDecoration(color: title, shape: BoxShape.circle),
               todayDecoration: BoxDecoration(
-                  color: AppColors.backgroundPage, shape: BoxShape.circle),
+                  color: backgroundPage, shape: BoxShape.circle),
             ),
             firstDay: kFirstDay,
             lastDay: kLastDay,
@@ -151,7 +151,7 @@ class CalendarPageState extends State<CalendarPage> {
           ),
           ElevatedButton(
             style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(AppColors.title)),
+                backgroundColor: MaterialStateProperty.all(title)),
             child: const Text('Limpar e atualizar'),
             onPressed: () {
               setState(
@@ -179,7 +179,7 @@ class CalendarPageState extends State<CalendarPage> {
                       decoration: BoxDecoration(
                         border: Border.all(),
                         borderRadius: BorderRadius.circular(12.0),
-                        color: AppColors.iconDisablePage,
+                        color: iconDisablePage,
                       ),
                       child: ListTile(
                         onTap: () {

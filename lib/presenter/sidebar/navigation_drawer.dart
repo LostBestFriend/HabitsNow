@@ -50,7 +50,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
   Widget build(BuildContext context) => Drawer(
         width: MediaQuery.of(context).size.width / 1.4,
         child: Container(
-          color: AppColors.backgroundPage,
+          color: backgroundPage,
           child: ListView(
             children: <Widget>[
               Column(

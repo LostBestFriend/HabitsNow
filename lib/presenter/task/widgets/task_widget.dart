@@ -39,7 +39,7 @@ class TaskWidget extends StatelessWidget {
 
   Widget buildTask(BuildContext context) {
     return Container(
-      color: AppColors.title,
+      color: title,
       padding: const EdgeInsets.all(5),
       child: Row(
         children: [

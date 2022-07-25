@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        unselectedItemColor: AppColors.iconDisablePage,
+        unselectedItemColor: iconDisablePage,
         showUnselectedLabels: true,
         items: const [
           BottomNavigationBarItem(
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         currentIndex: selectedIndex,
-        selectedItemColor: AppColors.iconActivePage,
+        selectedItemColor: iconActivePage,
         onTap: _onitemTapped,
       ),
     );
