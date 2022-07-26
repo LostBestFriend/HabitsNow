@@ -7,9 +7,7 @@ import 'package:table_calendar/table_calendar.dart';
 
 import '../../core/colors.dart';
 import '../../shared/widgets/custom_top_bar.dart';
-import '../habits/state/model/habits_model.dart';
 import '../sidebar/navigation_drawer.dart';
-import '../task/model/task_model.dart';
 import 'events.dart';
 
 class CalendarPage extends StatefulWidget {
