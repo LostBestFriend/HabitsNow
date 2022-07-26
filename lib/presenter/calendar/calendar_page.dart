@@ -190,9 +190,7 @@ class CalendarPageState extends State<CalendarPage> {
                           } else {
                             if(value[index].title.contains("Hábito:")){
                             widget.callback!(1);
-                            } else {
-                              print("object");
-                            }
+                            } 
                           }
                         },
                         title: Text(
