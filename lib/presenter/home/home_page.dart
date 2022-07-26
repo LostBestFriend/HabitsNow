@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../core/colors.dart';
-import 'calendar/calendar_page.dart';
-import 'habits/categories/category_page.dart';
-import 'habits/habits_page.dart';
-import 'habits/widgets/show_modal_button.dart';
-import 'sidebar/navigation_drawer.dart';
-import 'task/task.dart';
+import '../../core/colors.dart';
+import '../calendar/calendar_page.dart';
+import '../categories/category_page.dart';
+import '../habits/habits_page.dart';
+import '../habits/widgets/show_modal_button.dart';
+import '../sidebar/navigation_drawer.dart';
+import '../task/task.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -31,10 +31,10 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
-  void callback() {
+  void callback(int index) {
     setState(
       () {
-        selectedIndex = 2;
+        selectedIndex = index;
       },
     );
   }
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        unselectedItemColor: AppColors.iconDisablePage,
+        unselectedItemColor: iconDisableColor,
         showUnselectedLabels: true,
         items: const [
           BottomNavigationBarItem(
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         currentIndex: selectedIndex,
-        selectedItemColor: AppColors.iconActivePage,
+        selectedItemColor: iconActiveColor,
         onTap: _onitemTapped,
       ),
     );
