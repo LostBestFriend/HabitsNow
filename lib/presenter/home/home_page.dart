@@ -31,10 +31,10 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
-  void callback() {
+  void callback(int index) {
     setState(
       () {
-        selectedIndex = 2;
+        selectedIndex = index;
       },
     );
   }

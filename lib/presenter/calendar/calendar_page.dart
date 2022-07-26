@@ -7,7 +7,9 @@ import 'package:table_calendar/table_calendar.dart';
 
 import '../../core/colors.dart';
 import '../../shared/widgets/custom_top_bar.dart';
+import '../habits/state/model/habits_model.dart';
 import '../sidebar/navigation_drawer.dart';
+import '../task/model/task_model.dart';
 import 'events.dart';
 
 class CalendarPage extends StatefulWidget {
@@ -183,7 +185,15 @@ class CalendarPageState extends State<CalendarPage> {
                       ),
                       child: ListTile(
                         onTap: () {
-                          widget.callback!();
+                          if(value[index].title.contains("Tarefa:")){
+                          widget.callback!(2);
+                          } else {
+                            if(value[index].title.contains("Hábito:")){
+                            widget.callback!(1);
+                            } else {
+                              print("object");
+                            }
+                          }
                         },
                         title: Text(
                           '${value[index]}',
