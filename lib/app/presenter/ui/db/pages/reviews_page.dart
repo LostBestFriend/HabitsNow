@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import '../../home/home_page.dart';
 
+import '../../home/home_page.dart';
 import '../database.dart';
 import '../review.dart';
 import '../widgets/review_card_widget.dart';

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../presenter/home/home_page.dart';
+import '../../app/presenter/ui/home/home_page.dart';
+
+
 
 class BePremium extends StatelessWidget {
   const BePremium({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../app/presenter/ui/home/home_page.dart';
 import '../../core/colors.dart';
-import '../../presenter/home/home_page.dart';
 
 class CustomTopBar extends StatefulWidget implements PreferredSizeWidget {
   const CustomTopBar({

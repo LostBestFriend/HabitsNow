@@ -3,9 +3,9 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../../core/colors.dart';
+import '../../../../../core/utils.dart';
 import '../../calendar/events.dart';
-import '../../../core/colors.dart';
-import '../../../core/utils.dart';
 import '../model/task_model.dart';
 import '../provider/task_provider.dart';
 

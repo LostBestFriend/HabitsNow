@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:habits_now_app/presenter/habits/state/provider/habits_provider.dart';
-import 'package:habits_now_app/presenter/task/provider/task_provider.dart';
-import 'package:habits_now_app/presenter/task/task.dart';
 import 'package:provider/provider.dart';
 
+import 'app/presenter/ui/habits/state/provider/habits_provider.dart';
+import 'app/presenter/ui/sidebar/widgets/navigation_provider.dart';
+import 'app/presenter/ui/task/provider/task_provider.dart';
+import 'app/presenter/ui/task/task.dart';
 import 'core/colors.dart';
-import 'presenter/sidebar/widgets/navigation_provider.dart';
 import 'shared/widgets/splash_screen.dart';
 
 void main() {
