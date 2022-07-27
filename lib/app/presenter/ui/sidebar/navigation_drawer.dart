@@ -6,9 +6,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/colors.dart';
 import '../../../../shared/widgets/alert_box_bepremium.dart';
+import '../configuration/configuration_page.dart';
 import '../db/pages/reviews_page.dart';
 import '../db/widgets/rate_us_alert_box.dart';
-import '../configuration/configuration_page.dart';
 import 'widgets/header_sidebar.dart';
 import 'widgets/navigation_item.dart';
 import 'widgets/sidebar_item_builder.dart';
