@@ -11,8 +11,7 @@ class ReviewsPage extends StatefulWidget {
   const ReviewsPage({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
-  _ReviewsPageState createState() => _ReviewsPageState();
+  State<ReviewsPage> createState() => _ReviewsPageState();
 }
 
 class _ReviewsPageState extends State<ReviewsPage> {

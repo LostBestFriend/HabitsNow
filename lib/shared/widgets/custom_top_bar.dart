@@ -1,10 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:habits_now_app/app/presenter/ui/configuration/configuration_page.dart';
+import '../../app/presenter/ui/configuration/configuration_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../app/presenter/ui/db/widgets/rate_us_alert_box.dart';
-import '../../app/presenter/ui/home/home_page.dart';
 import '../../core/colors.dart';
 import 'alert_box_bepremium.dart';
 

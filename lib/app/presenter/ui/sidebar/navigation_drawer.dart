@@ -133,7 +133,6 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                     item: NavigationItem.rateUs,
                     text: 'Avalie o aplicativo',
                     icon: Icons.rate_review_outlined,
-                    // ignore: avoid_print
                     onClicked: () {
                       Navigator.push(
                         context,

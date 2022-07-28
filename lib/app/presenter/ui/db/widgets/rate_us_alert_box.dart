@@ -12,8 +12,7 @@ class RateUsAlexBox extends StatefulWidget {
     this.note,
   }) : super(key: key);
   @override
-  // ignore: library_private_types_in_public_api
-  _RateUsAlexBoxState createState() => _RateUsAlexBoxState();
+  State<RateUsAlexBox> createState() => _RateUsAlexBoxState();
 }
 
 class _RateUsAlexBoxState extends State<RateUsAlexBox> {
