@@ -19,12 +19,7 @@ class ConfigurationPage extends StatelessWidget {
             color: Color.fromARGB(255, 213, 32, 89),
           ),
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HomePage(),
-              ),
-            );
+            Navigator.of(context).pop();
           },
         ),
       ),
