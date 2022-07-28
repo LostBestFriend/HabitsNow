@@ -11,7 +11,6 @@ class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-
   State<HomePage> createState() => _HomePageState();
 }
 
@@ -63,7 +62,7 @@ class _HomePageState extends State<HomePage> {
       () {
         bottomSelectedIndex = index;
         pageController.animateToPage(index,
-          duration: const Duration(milliseconds: 500), curve: Curves.ease);
+            duration: const Duration(milliseconds: 500), curve: Curves.ease);
       },
     );
   }
@@ -90,17 +89,21 @@ class _HomePageState extends State<HomePage> {
   }
 
   void pageChanged(int index) {
-    setState(() {
-      bottomSelectedIndex = index;
-    });
+    setState(
+      () {
+        bottomSelectedIndex = index;
+      },
+    );
   }
 
   void bottomTapped(int index) {
-    setState(() {
-      bottomSelectedIndex = index;
-      pageController.animateToPage(index,
-          duration: const Duration(milliseconds: 500), curve: Curves.ease);
-    });
+    setState(
+      () {
+        bottomSelectedIndex = index;
+        pageController.animateToPage(index,
+            duration: const Duration(milliseconds: 500), curve: Curves.ease);
+      },
+    );
   }
 
   @override
