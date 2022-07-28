@@ -74,11 +74,7 @@ class BePremium extends StatelessWidget {
             MaterialButton(
               color: const Color.fromARGB(200, 213, 32, 89),
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const HomePage(),
-                  ),
-                );
+                Navigator.of(context).pop();
               },
               child: const Text(
                 'Ok',
