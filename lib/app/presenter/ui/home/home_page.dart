@@ -75,9 +75,9 @@ class _HomePageState extends State<HomePage> {
       },
       children: <Widget>[
         calendar!,
-        const HabitsPage(),
-        const TaskPage(),
-        const CategoryPage(),
+        HabitsPage(callback: callback),
+        TaskPage(callback: callback,),
+        CategoryPage(callback: callback,),
       ],
     );
   }

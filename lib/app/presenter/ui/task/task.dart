@@ -7,7 +7,8 @@ import '../sidebar/navigation_drawer.dart';
 import 'widgets/task_list_widget.dart';
 
 class TaskPage extends StatefulWidget {
-  const TaskPage({Key? key}) : super(key: key);
+  final Function? callback;
+  const TaskPage({Key? key, this.callback}) : super(key: key);
 
   @override
   State<TaskPage> createState() => _TaskPageState();
@@ -30,7 +31,7 @@ class _TaskPageState extends State<TaskPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: const CustomTopBar(title: 'Tarefas'),
-        drawer: const NavigationDrawer(),
+        drawer: NavigationDrawer(callback: widget.callback,),
         backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         body: SingleChildScrollView(
           child: Column(

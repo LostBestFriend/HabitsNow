@@ -14,7 +14,8 @@ import 'widgets/navigation_item.dart';
 import 'widgets/sidebar_item_builder.dart';
 
 class NavigationDrawer extends StatefulWidget {
-  const NavigationDrawer({Key? key}) : super(key: key);
+  final Function? callback;
+  const NavigationDrawer({Key? key, this.callback}) : super(key: key);
 
   @override
   State<NavigationDrawer> createState() => _NavigationDrawerState();
@@ -69,12 +70,12 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                       item: NavigationItem.home,
                       text: 'Início',
                       icon: Icons.home_outlined,
-                      onClicked: () {}),
+                      onClicked: () {widget.callback!(0);}),
                   buildSideBarItem(context,
                       item: NavigationItem.categories,
                       text: 'Categorias',
                       icon: Icons.category_outlined,
-                      onClicked: () {}),
+                      onClicked: () {widget.callback!(3);}),
                   Container(
                     height: 12,
                     decoration: const BoxDecoration(

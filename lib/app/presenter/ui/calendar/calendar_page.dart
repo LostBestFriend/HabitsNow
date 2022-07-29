@@ -104,7 +104,7 @@ class CalendarPageState extends State<CalendarPage> {
           ),
         ),
       ),
-      drawer: const NavigationDrawer(),
+      drawer: NavigationDrawer(callback: widget.callback),
       body: Column(
         children: [
           TableCalendar<Event>(

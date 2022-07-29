@@ -14,7 +14,7 @@ void main() {
       providers: [
         ChangeNotifierProvider<NavigationProvider>(
           create: (context) => NavigationProvider(),
-          child: const TaskPage(),
+          //child: const TaskPage(),
         ),
         ChangeNotifierProvider<TaskProvider>(
           create: (context) => TaskProvider(),

@@ -7,7 +7,8 @@ import '../sidebar/navigation_drawer.dart';
 import 'widgets/habits_list_widget.dart';
 
 class HabitsPage extends StatefulWidget {
-  const HabitsPage({Key? key}) : super(key: key);
+  final Function? callback;
+  const HabitsPage({Key? key, this.callback}) : super(key: key);
 
   @override
   State<HabitsPage> createState() => _HabitsPageState();
@@ -30,7 +31,7 @@ class _HabitsPageState extends State<HabitsPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: const CustomTopBar(title: 'Hábitos'),
-        drawer: const NavigationDrawer(),
+        drawer: NavigationDrawer(callback: widget.callback,),
         backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         body: SingleChildScrollView(
           child: Column(

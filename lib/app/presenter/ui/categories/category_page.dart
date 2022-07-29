@@ -12,17 +12,19 @@ import 'widgets/outdoor_category.dart';
 import 'widgets/sports_category.dart';
 
 class CategoryPage extends StatefulWidget {
-  const CategoryPage({Key? key}) : super(key: key);
+  final Function? callback;
+  const CategoryPage({Key? key, this.callback}) : super(key: key);
 
   @override
   State<CategoryPage> createState() => _CategoryPageState();
 }
 
 class _CategoryPageState extends State<CategoryPage> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const NavigationDrawer(),
+      drawer: NavigationDrawer(callback: widget.callback,),
       appBar: const CustomTopBar(title: 'Categorias'),
       backgroundColor: const Color.fromARGB(255, 0, 0, 0),
       body: Padding(
