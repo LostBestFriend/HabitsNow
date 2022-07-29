@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/colors.dart';
-import '../home/home_page.dart';
 import 'widgets/list_view_buider.dart';
 
 class ConfigurationPage extends StatelessWidget {
@@ -28,4 +27,3 @@ class ConfigurationPage extends StatelessWidget {
     );
   }
 }
-
