@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'app/presenter/ui/habits/state/provider/habits_provider.dart';
 import 'app/presenter/ui/sidebar/widgets/navigation_provider.dart';
 import 'app/presenter/ui/task/provider/task_provider.dart';
-import 'app/presenter/ui/task/task.dart';
 import 'core/colors.dart';
 import 'shared/widgets/splash_screen.dart';
 
@@ -14,7 +13,6 @@ void main() {
       providers: [
         ChangeNotifierProvider<NavigationProvider>(
           create: (context) => NavigationProvider(),
-          //child: const TaskPage(),
         ),
         ChangeNotifierProvider<TaskProvider>(
           create: (context) => TaskProvider(),
